@@ -6,11 +6,17 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    minHeight: {
+      inputHeight: "4rem",
+    },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        blueDark: "#000C36",
+        blueBlack: "#3B4877",
+        greenButton: "#51E08A",
+      },
+      width: {
+        small: "30rem",
       },
     },
   },
