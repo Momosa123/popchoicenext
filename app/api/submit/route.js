@@ -1,7 +1,10 @@
 import OpenAI from "openai";
 import { getChatCompletion, getMovieRecommendation } from "@/utils/utilities";
 
-const openai = new OpenAI(process.env.NEXT_OPENAI_API_KEY);
+const openai = new OpenAI({
+  apiKey: process.env.NEXT_OPENAI_API_KEY,
+  dangerouslyAllowBrowser: true,
+});
 
 // POST/api/messages
 export const POST = async request => {
