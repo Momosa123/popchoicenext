@@ -8,6 +8,9 @@ const openai = new OpenAI({
 
 // POST/api/messages
 export const POST = async request => {
+  if (!process.env.NEXT_OPENAI_API_KEY) {
+    return console.log("Y a pas de clé OPEN API");
+  }
   try {
     const { input, query } = await request.json();
 
