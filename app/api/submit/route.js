@@ -2,7 +2,7 @@ import OpenAI from "openai";
 import { getChatCompletion, getMovieRecommendation } from "@/utils/utilities";
 
 const openai = new OpenAI({
-  apiKey: process.env.NEXT_PUBLIC_OPENAI_KEY,
+  apiKey: process.env.NEXT_OPENAI_API_KEY,
   dangerouslyAllowBrowser: true,
 });
 
