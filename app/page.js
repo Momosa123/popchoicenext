@@ -101,7 +101,7 @@ function App() {
               handleChange={e => handleChange(i, e.target.value)}
             />
           ))}
-          <Button handleClick={handleSubmit} text="Let'sGo" />
+          <Button handleClick={handleSubmit} text="Let's Go" />
         </form>
       ) : (
         <Response aiResponse={aiResponse} setAiResponse={setAiResponse} />
