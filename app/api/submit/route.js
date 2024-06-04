@@ -1,7 +1,6 @@
 import OpenAI from "openai";
 import { getChatCompletion, getMovieRecommendation } from "@/utils/utilities";
-export const dynamic = "force-dynamic";
-
+export const maxDuration = 15;
 const openai = new OpenAI({
   apiKey: process.env.NEXT_OPENAI_API_KEY,
 });
