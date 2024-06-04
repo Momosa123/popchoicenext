@@ -1,6 +1,6 @@
 import OpenAI from "openai";
 import { getChatCompletion, getMovieRecommendation } from "@/utils/utilities";
-
+export const maxDuration = 5;
 const openai = new OpenAI({
   apiKey: process.env.NEXT_OPENAI_API_KEY,
 });
