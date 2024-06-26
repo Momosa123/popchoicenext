@@ -7,6 +7,7 @@ const openai = new OpenAI({
 
 // POST/api/messages
 export const POST = async request => {
+  console.log("started");
   if (!process.env.NEXT_OPENAI_API_KEY) {
     return console.log("Y a pas de clé OPEN API");
   }
@@ -14,7 +15,7 @@ export const POST = async request => {
     const { input, query } = await request.json();
 
     const movie_reco = await getMovieRecommendation(input);
-
+    console.log(movie_reco);
     const chat = await getChatCompletion(movie_reco.content, query);
     console.log(chat);
 
