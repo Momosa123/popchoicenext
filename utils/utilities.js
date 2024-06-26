@@ -1,7 +1,7 @@
 import OpenAI from "openai";
 import { supabase } from "@/config/supabaseClient";
 
-import { movies } from "@/assets/movies/content";
+import { movies } from "../public/assets/movies/content";
 
 const openai = new OpenAI({ apiKey: process.env.NEXT_OPENAI_API_KEY });
 
